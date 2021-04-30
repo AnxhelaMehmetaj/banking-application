@@ -1,21 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-  background: #fff;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  margin-top: 6rem;
-}
-
-button{
+.button {
   font: inherit;
   border: 1px solid #4f005f;
   background: #4f005f;
@@ -45,4 +28,3 @@ button:active:disabled {
   color: #666666;
   cursor: not-allowed;
 }
-
