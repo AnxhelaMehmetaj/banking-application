@@ -11,13 +11,10 @@ const Home = () => {
     return (
         <div className={classes.home}>
             <h1>Welcome back!</h1>
-
-
             <Route path='/bank'>
                 <Bank/>
             </Route>
 
-          <h2>Transaction History</h2>
           <Summary/>
 
         </div>
