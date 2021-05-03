@@ -1,15 +1,26 @@
 import React from 'react';
 
-import Card from '../UI/Card/Card';
-import Button from '../UI/Button/Button';
-import classes from './Home.module.css';
 
-const Home = (props) => {
+import classes from './Home.module.css';
+import {Route} from "react-router-dom";
+import Bank from "../../Pages/Bank";
+import Summary from "../../Pages/Summary";
+
+
+const Home = () => {
     return (
-        <Card className={classes.home}>
+        <div className={classes.home}>
             <h1>Welcome back!</h1>
-            <Button onClick={props.onLogout}>Logout</Button>
-        </Card>
+
+
+            <Route path='/bank'>
+                <Bank/>
+            </Route>
+
+          <h2>Transaction History</h2>
+          <Summary/>
+
+        </div>
     );
 };
 

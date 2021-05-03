@@ -12,8 +12,10 @@ const Navigation = (props) => {
                         <ul>
                             {ctx.isLoggedIn && (
                                 <li>
-                                    <a href="/">Users</a>
+                                    <a href="/bank">Account</a>
                                 </li>
+
+
                             )}
                             {ctx.isLoggedIn && (
                                 <li>
